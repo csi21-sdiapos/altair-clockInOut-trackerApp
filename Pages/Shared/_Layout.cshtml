@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/altair_clockInOut_app.styles.css" asp-append-version="true" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap">
+
+    <title>@ViewData["Title"] - altair_clockInOut_app</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-page="/Index">
+                    <img src="~/LogoAltairBlanco.png" alt="Bootstrap" width="160" height="60" style="margin-right: 30px" />
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- INICIO Dropdown Empleados -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Empleados
+                            </a>
+                            
+                            <ul class="dropdown-menu" style="background-color: #1b3e5f">
+                                <li>
+                                    <a class="dropdown-item" asp-page="">
+                                        Registro
+                                    </a>
+                                </li>
+                                
+                                @*<div class="dropdown-divider"></div>*@
+                                
+                                <li>
+                                    <a class="dropdown-item" asp-page="">
+                                        Informes
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- FIN Dropdown Empleados -->
+                       
+                        <!-- INICIO Dropdown Admin -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin
+                            </a>
+                            
+                            <ul class="dropdown-menu" style="background-color: #501212">
+                                <li>
+                                    <a class="dropdown-item" asp-page="">
+                                        Alta
+                                    </a>
+                                </li>
+                                
+                                @*<div class="dropdown-divider"></div>*@
+                                
+                                <li>
+                                    <a class="dropdown-item" asp-page="">
+                                        Gest. Empleados
+                                    </a>
+                                </li>
+                                
+                                @*<div class="dropdown-divider"></div>*@
+                                
+                                <li>
+                                    <a class="dropdown-item" asp-page="">
+                                        Informes
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- FIN Dropdown Admin -->
+
+                        <!-- ZONA DE PRUEBA DE BOTONES Y ENLACES RÁPIDOS A COMPONENTES -->
+                        <li class="nav-item">
+                            <a class="nav-link text-light" role="button" asp-page="./Login/Login">
+                                Login
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" role="button" asp-page="./Form/Form">
+                                Form
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" role="button" asp-page="./Clock/Clock">
+                                Clock
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Links de la derecha -->
+                <div class="collapse navbar-collapse flex-grow-0 justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-right">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" style="font-weight: bold" asp-page="">
+                                Perfil
+                            </a>
+                        </li>
+                        
+                        @*<div class="vr text-light"></div>*@
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" asp-page="">
+                                Cerrar Sesión
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Fecha y hora -->
+                <div class="collapse navbar-collapse flex-grow-0 justify-content-end">
+                    <a class="nav-link text-light text-center">
+                        <script>
+                            var d = new Date();
+                            
+                            document.write(
+                                d.getHours(),
+                                ":" + d.getMinutes(),
+                                "<br>" + d.getDate(),
+                                "-" + d.getMonth() + 1,
+                                "-" + d.getFullYear()
+                            );
+                        </script>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div @*class="container"*@>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="text-white fixed-bottom">
+      <div class="container"></div>
+      
+      <!-- Copyright -->
+      <div class="p-2" style="background-color: #1b3e5f">
+        <a class="nav-link text-light">
+          <script>
+            var d = new Date();
+            document.write(" ©" + d.getFullYear() + " Colegio Altair Sevilla");
+          </script>
+        </a>
+      </div>
+    </footer>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

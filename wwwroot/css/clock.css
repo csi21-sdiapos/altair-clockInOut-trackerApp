@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+.body {
+  /* height: 75vh; */
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+/**************************** Digital Clock *********************************** */
+.digitalClock {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #10101E; */
+  background: #fff;
+}
+
+.datetime {
+  color: #fff;
+  background: #10101E;
+  font-family: "Segoe UI", sans-serif;
+  width: 340px;
+  padding: 15px 10px;
+  border: 3px solid #015b96;
+  border-radius: 5px;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1)); */
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+.datetime:hover {
+  background: #015b96;
+  box-shadow: 0 0 30px #015b96;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child) {
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child {
+  background: #015b96;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+/**************************** Ripple Buttons *********************************** */
+.wrapper{
+  display: grid;
+  /* height: 100%; */
+  place-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .btns{
+  display: flex;
+  margin: 30px 0 20px 0;
+}
+.btns a{
+  position: relative;
+  margin: 0 20px;
+  height: 60px;
+  width: 200px;
+  display: block;
+  line-height: 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.btns a:first-child{
+  background: linear-gradient(90deg, #015b96, #46a8e8);
+}
+.btns a:last-child{
+  background: linear-gradient(-90deg, #f5ce62, #e85a19);
+}
+.btns a > span{
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ripples 0.6s linear infinite;
+}
+@keyframes ripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .wrapper .btns {
+    margin: 20px 0 5px 0;
+  }
+  
+  .btns a {
+    height: 60px;
+    width: 125px; 
+  }
+}

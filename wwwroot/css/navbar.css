@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter.ttf");
+    }
+
+/*NAVBAR ESTILOS*/
+nav{
+    font-family: Inter;
+    font-size: 18px;
+    background-color: #1b3e5f;
+}
+
+/*DROPDOWN ESTILOS*/
+.dropdown{
+    width: 18vh;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-menu{
+    padding: 0;
+    padding-top:19px ;
+    color: white;
+    width: 18vh;
+    border: none;
+    z-index: -1;
+}
+
+.dropdown-item{
+    color: #fff;
+    text-align: center;
+    padding: 7px;
+}
+
+.dropdown-item:hover{
+    background-color: #ffffff0c;
+    color: white;
+    border-radius: 8px;
+}
+
+.dropdown-divider {
+    padding: 0;
+    margin: 0;
+    border-color: #ffffff13;
+}
+/*DROPDOWN ESTILOS*/
+.nav-link{
+    padding-left: 15px;
+}
+
+/*NAVBAR ESTILOS*/

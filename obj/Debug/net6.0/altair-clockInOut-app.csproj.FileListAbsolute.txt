@@ -1,0 +1,52 @@
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\bin\Debug\net6.0\appsettings.json
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.staticwebassets.runtime.json
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.exe
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.deps.json
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.runtimeconfig.json
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.dll
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.pdb
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.csproj.AssemblyReference.cache
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.AssemblyInfoInputs.cache
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.AssemblyInfo.cs
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.csproj.CoreCompileInputs.cache
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.RazorAssemblyInfo.cache
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.RazorAssemblyInfo.cs
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\scopedcss\bundle\altair-clockInOut-app.styles.css
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\scopedcss\projectbundle\altair-clockInOut-app.bundle.scp.css
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.dll
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\refint\altair-clockInOut-app.dll
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.pdb
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.genruntimeconfig.cache
+C:\Users\csi21-sdiapos\Desktop\altair-clockInOut-app\obj\Debug\net6.0\ref\altair-clockInOut-app.dll
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\bin\Debug\net6.0\appsettings.json
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.staticwebassets.runtime.json
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.exe
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.deps.json
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.runtimeconfig.json
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.dll
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\bin\Debug\net6.0\altair-clockInOut-app.pdb
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.csproj.AssemblyReference.cache
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.AssemblyInfoInputs.cache
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.AssemblyInfo.cs
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.csproj.CoreCompileInputs.cache
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.RazorAssemblyInfo.cache
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.RazorAssemblyInfo.cs
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\scopedcss\bundle\altair-clockInOut-app.styles.css
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\scopedcss\projectbundle\altair-clockInOut-app.bundle.scp.css
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.dll
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\refint\altair-clockInOut-app.dll
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.pdb
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\altair-clockInOut-app.genruntimeconfig.cache
+C:\Users\Sergio DC\Desktop\altair-clockInOut-app\obj\Debug\net6.0\ref\altair-clockInOut-app.dll

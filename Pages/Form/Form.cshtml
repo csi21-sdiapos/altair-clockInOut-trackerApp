@@ -1,0 +1,96 @@
+﻿@page
+@model altair_clockInOut_app.Pages.Form.FormModel
+@{
+}
+
+<link rel="stylesheet" href="~/css/form.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+<div class="body">
+    <div class="container1">
+        <header>Register</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Información Personal</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Apellidos</label>
+                            <input type="text" placeholder="Apellidos" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Código de Empleado</label>
+                            <input type="text" placeholder="Nombre de Usuario" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Confirmar Email</label>
+                            <input type="email" placeholder="Confirmar Email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Contraseña</label>
+                            <input type="password" placeholder="Contraseña" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Confirmar Contraseña</label>
+                            <input type="password" placeholder="Confirmar Contraseña" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Número de Teléfono</label>
+                            <input type="text" placeholder="Móvil" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Departamentos</label>
+                            <select required>
+                                <option disabled selected>Seleccionar Áreas</option>
+                                <option>Infantil (INF)</option>
+                                <option>Secundaria (SEC)</option>
+                                <option>Bachillerato (BACH)</option>
+                                <option>Formación Profesional (FP)</option>
+                                <option>Dirección (DIR)</option>
+                                <option>Servicios Generales (SG)</option>
+                                <option>Secretaría (SECR)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <!-- <button class="nextBtn">
+                        <span class="btnText">Siguiente</span>
+                        <i class="uil uil-navigator"></i>
+                    </button> -->
+                    <!-- <button class="backBtn">
+                        <i class="uil uil-navigator"></i>
+                        <span class="btnText">Volver</span>
+                    </button> -->
+
+                    <button class="sumbit">
+                        <span class="btnText">Registrar</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="~/js/form.js" asp-append-version="true"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
