@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Sergio DC\\.nuget\\packages\\": {}
+    "C:\\Users\\csi21-sdiapos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-app\\altair-clockInOut-app.csproj",
+      "projectUniqueName": "C:\\Users\\csi21-sdiapos\\Desktop\\altair-clockInOut-app\\altair-clockInOut-app.csproj",
       "projectName": "altair-clockInOut-app",
-      "projectPath": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-app\\altair-clockInOut-app.csproj",
-      "packagesPath": "C:\\Users\\Sergio DC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-app\\obj\\",
+      "projectPath": "C:\\Users\\csi21-sdiapos\\Desktop\\altair-clockInOut-app\\altair-clockInOut-app.csproj",
+      "packagesPath": "C:\\Users\\csi21-sdiapos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\csi21-sdiapos\\Desktop\\altair-clockInOut-app\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sergio DC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\csi21-sdiapos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
