@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\altair-clockInOut-app.props" />
+</Project>
