@@ -78,6 +78,7 @@
 }
 
 .boton-volver {
+    text-decoration: none;
     border-radius: 16px;
     padding-top: 20px;
     padding-bottom: 20px;

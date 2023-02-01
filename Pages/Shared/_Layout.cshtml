@@ -11,188 +11,189 @@
 </head>
 
 <body>
-    <header>
-        <!-- Barra de navegación -->
-        <nav class="navbar navbar-expand-lg p-2" style="background: #1b3e5f;">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-page="/Index">
-                    <img src="~/LogoAltairBlanco.png" alt="Bootstrap" width="160" height="60" style="margin-right: 30px" />
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <!-- INICIO Dropdown Empleados -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Empleados
-                            </a>
-
-                            <ul class="dropdown-menu" style="background-color: #1b3e5f">
-                                <li>
-                                    <a class="dropdown-item  text-light" asp-page="">
-                                        Registro
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item  text-light" asp-page="">
-                                        Informes
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- FIN Dropdown Empleados -->
-
-                        <!-- INICIO Dropdown Admin -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Admin
-                            </a>
-
-                            <ul class="dropdown-menu" style="background-color: #501212">
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="">
-                                        Alta
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="">
-                                        Gest. Empleados
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="">
-                                        Informes
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- FIN Dropdown Admin -->
-
-                        <!-- INICIO Dropdown Views Test -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Views Test
-                            </a>
-
-                            <ul class="dropdown-menu" style="background-color: #501212">
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="/Login/Login">
-                                        Login
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="/Form/Form">
-                                        Form
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="/Clock/Clock">
-                                        Clock
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="/List/List">
-                                        List
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="/UserProfile/UserProfile">
-                                        UserProfile
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="/UserPasswordPanel/UserPasswordPanel">
-                                        UserPaswwordPanel
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="/UserProfileData/UserProfileData">
-                                        UserProfileData
-                                    </a>
-                                </li>
-
-                                @*<div class="dropdown-divider"></div>*@
-
-                                <li>
-                                    <a class="dropdown-item text-light" asp-page="/ConfirmDeleteUser/ConfirmDeleteUser">
-                                        ConfirmDeleteUser
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- FIN Dropdown Admin -->
-                    </ul>
-                </div>
-
-                <!-- Links de la derecha -->
-                <div class="collapse navbar-collapse flex-grow-0 justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav text-right">
-                        <li class="nav-item active">
-                            <a class="nav-link text-light" style="font-weight: bold" asp-page="/UserProfile/UserProfile">
-                                Perfil
-                            </a>
-                        </li>
-
-                        @*<div class="vr text-light"></div>*@
-
-                        <li class="nav-item active">
-                            <a class="nav-link text-light" asp-page="">
-                                Cerrar Sesión
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Fecha y hora -->
-                <div class="collapse navbar-collapse flex-grow-0 justify-content-end">
-                    <a class="nav-link text-light text-center">
-                        <script>
-                            var d = new Date();
-
-                            document.write(
-                                d.getHours(),
-                                ":" + d.getMinutes(),
-                                "<br>" + d.getDate(),
-                                "-" + d.getMonth() + 1,
-                                "-" + d.getFullYear()
-                            );
-                        </script>
+    @*@if (User.Identity.IsAuthenticated)
+    {*@
+        <header>
+            <!-- Barra de navegación -->
+            <nav class="navbar navbar-expand-lg p-2" style="background: #1b3e5f;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-page="/Index">
+                        <img src="~/LogoAltairBlanco.png" alt="Bootstrap" width="160" height="60" style="margin-right: 30px" />
                     </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <!-- INICIO Dropdown Empleados -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Empleados
+                                </a>
+
+                                <ul class="dropdown-menu" style="background-color: #1b3e5f">
+                                    <li>
+                                        <a class="dropdown-item  text-light" asp-page="">
+                                            Registro
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item  text-light" asp-page="">
+                                            Informes
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- FIN Dropdown Empleados -->
+                            <!-- INICIO Dropdown Admin -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin
+                                </a>
+
+                                <ul class="dropdown-menu" style="background-color: #501212">
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="">
+                                            Alta
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="">
+                                            Gest. Empleados
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="">
+                                            Informes
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- FIN Dropdown Admin -->
+                            <!-- INICIO Dropdown Views Test -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Views Test
+                                </a>
+
+                                <ul class="dropdown-menu" style="background-color: #501212">
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="/Login/Login">
+                                            Login
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="/Form/Form">
+                                            Form
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="/Clock/Clock">
+                                            Clock
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="/List/List">
+                                            List
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="/UserProfile/UserProfile">
+                                            UserProfile
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="/UserPasswordPanel/UserPasswordPanel">
+                                            UserPaswwordPanel
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="/UserProfileData/UserProfileData">
+                                            UserProfileData
+                                        </a>
+                                    </li>
+
+                                    @*<div class="dropdown-divider"></div>*@
+
+                                    <li>
+                                        <a class="dropdown-item text-light" asp-page="/ConfirmDeleteUser/ConfirmDeleteUser">
+                                            ConfirmDeleteUser
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- FIN Dropdown Admin -->
+                        </ul>
+                    </div>
+
+                    <!-- Links de la derecha -->
+                    <div class="collapse navbar-collapse flex-grow-0 justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-right">
+                            <li class="nav-item active">
+                                <a class="nav-link text-light" style="font-weight: bold" asp-page="/UserProfile/UserProfile">
+                                    Perfil
+                                </a>
+                            </li>
+
+                            @*<div class="vr text-light"></div>*@
+
+                            <li class="nav-item active">
+                                <a class="nav-link text-light" asp-page="">
+                                    Cerrar Sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Fecha y hora -->
+                    <div class="collapse navbar-collapse flex-grow-0 justify-content-end">
+                        <a class="nav-link text-light text-center">
+                            <script>
+                                var d = new Date();
+
+                                document.write(
+                                    d.getHours(),
+                                    ":" + d.getMinutes(),
+                                    "<br>" + d.getDate(),
+                                    "-" + d.getMonth() + 1,
+                                    "-" + d.getFullYear()
+                                );
+                            </script>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+    @*}*@
 
 
     <div @*class="container"*@>

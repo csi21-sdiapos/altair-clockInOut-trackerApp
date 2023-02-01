@@ -1,7 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages()
+    .AddRazorPagesOptions(options =>
+    {
+        options.Conventions.AddPageRoute("/Login", ""); // para que la primera vista por defecto sea la del login --> https://www.learnrazorpages.com/razor-pages/routing
+    });
 
 var app = builder.Build();
 
