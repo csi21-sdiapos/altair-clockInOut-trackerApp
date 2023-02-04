@@ -15,6 +15,47 @@
     padding: 10%;
 }
 
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 30px 0 0 31%;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+
+    .input-field i {
+        text-align: center;
+        line-height: 55px;
+        color: #015b96;
+        transition: 0.5s;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+        .input-field i:hover {
+            color: #46a8e8;
+        }
+
+    .input-field input {
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+        .input-field input::placeholder {
+            color: #aaa;
+            font-weight: 500;
+        }
+
 /**************************** Digital Clock *********************************** */
 .digitalClock {
     /* height: 100vh; */
@@ -65,7 +106,7 @@
         letter-spacing: 3px;
     }
 
-    .time span:last-child {
+    /*.time span:last-child {
         background: #015b96;
         font-size: 30px;
         font-weight: 600;
@@ -73,7 +114,7 @@
         margin-top: 10px;
         padding: 0 5px;
         border-radius: 3px;
-    }
+    }*/
 
 /**************************** Ripple Buttons *********************************** */
 .wrapper {
@@ -142,6 +183,10 @@
 @media (max-width: 570px) {
     .wrapper .btns {
         margin: 20px 0 5px 0;
+    }
+
+    .input-field {
+        margin: 30px 0 0 0;
     }
 
     .btns a {

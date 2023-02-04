@@ -195,3 +195,15 @@ form .buttons {
         width: 100%;
     }
 }
+
+/* Dropdown Multiple Select */
+
+#multipleSelect {
+    max-width: 100%;
+    width: 350px;
+}
+
+.vscomp-toggle-button {
+    padding: 10px 30px 10px 10px;
+    border-radius: 5px;
+}

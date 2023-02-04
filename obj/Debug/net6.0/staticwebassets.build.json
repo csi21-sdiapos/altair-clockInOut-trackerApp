@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5v7IFh3Qz2FTwr4Gsvq1FwCTC+UcGYlu7AYA08V352U=",
+  "Hash": "277lfpX5HMMe6c2cHfkbCyNvMmK/1ccMl81gl8mym/Y=",
   "Source": "altair-clockInOut-app",
   "BasePath": "_content/altair-clockInOut-app",
   "Mode": "Default",
@@ -37092,6 +37092,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-trackerApp\\wwwroot\\lib\\virtual-select\\virtual-select.min.css",
+      "SourceId": "altair-clockInOut-app",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-trackerApp\\wwwroot\\",
+      "BasePath": "_content/altair-clockInOut-app",
+      "RelativePath": "lib/virtual-select/virtual-select.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\virtual-select\\virtual-select.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-trackerApp\\wwwroot\\lib\\virtual-select\\virtual-select.min.js",
+      "SourceId": "altair-clockInOut-app",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-trackerApp\\wwwroot\\",
+      "BasePath": "_content/altair-clockInOut-app",
+      "RelativePath": "lib/virtual-select/virtual-select.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\virtual-select\\virtual-select.min.js"
     },
     {
       "Identity": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-trackerApp\\wwwroot\\logo-altair.png",

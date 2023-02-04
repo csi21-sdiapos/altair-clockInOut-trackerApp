@@ -8725,6 +8725,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-trackerApp\\wwwroot\\lib\\virtual-select\\virtual-select.min.css",
+      "PackagePath": "staticwebassets\\lib\\virtual-select\\virtual-select.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-trackerApp\\wwwroot\\lib\\virtual-select\\virtual-select.min.js",
+      "PackagePath": "staticwebassets\\lib\\virtual-select\\virtual-select.min.js"
+    },
+    {
       "Id": "C:\\Users\\Sergio DC\\Desktop\\altair-clockInOut-trackerApp\\wwwroot\\logo-altair.png",
       "PackagePath": "staticwebassets\\logo-altair.png"
     },

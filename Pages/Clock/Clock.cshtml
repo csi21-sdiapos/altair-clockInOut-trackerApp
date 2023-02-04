@@ -4,6 +4,7 @@
 }
 
 <link rel="stylesheet" href="~/css/clock.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/fontawesome/dist/css/all.min.css" asp-append-version="true" />
 
 <body onload="initClock()">
 
@@ -13,19 +14,27 @@
             <div class="datetime">
                 <div class="date">
                     <span id="dayname">Día</span>,
-                    <span id="month">Mes</span>
-                    <span id="daynum">00</span>,
+                    <span id="daynum">00</span>
+                    <span>de</span>
+                    <span id="month">Mes</span>,
                     <span id="year">Año</span>
                 </div>
                 <div class="time">
                     <span id="hour">00</span>:
                     <span id="minutes">00</span><!--:-->
                     <!-- <span id="seconds">00</span> -->
-                    <span id="period">AM</span>
+                    @*<span id="period">AM</span>*@ @*Esto sería por si quisiéramos cambiarlo a un modo analógico*@
                 </div>
             </div>
         </div>
         <!-- digital clock end -->
+
+        <!-- remark input start -->
+        <div class="input-field">
+            <i class="fas fa-pencil" type="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="custom-popover" data-bs-title="Comentario" data-bs-content="(opcional) Introduzca un comentario."></i>
+            <input type="text" placeholder="Comentario" />
+        </div>
+        <!-- remark input end -->
 
         <!-- ripple buttons start -->
         <div class="wrapper">
@@ -38,7 +47,7 @@
     </div>
 
     <script>
-        /**************************** Digital Clock *********************************** */
+        /**************************** Digital Clock - Analogical Mode *********************************** */
         function updateClock() {
             var now = new Date();
 
@@ -50,7 +59,8 @@
                 min = now.getMinutes(),
                 sec = now.getSeconds(),
                 pe = "AM";
-
+/*
+            // esto sería para el modo analógico
             if (hou >= 12) {
                 pe = "PM";
             }
@@ -60,14 +70,14 @@
             if (hou > 12) {
                 hou = hou - 12;
             }
-
+*/
             Number.prototype.pad = function (digits) {
                 for (var n = this.toString(); n.length < digits; n = 0 + n);
                 return n;
             }
 
-            var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
-            var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            var week = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
             var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
             var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
             for (var i = 0; i < ids.length; i++)

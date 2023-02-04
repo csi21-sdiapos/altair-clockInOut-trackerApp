@@ -4,6 +4,7 @@
 }
 
 <link rel="stylesheet" href="~/css/form.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/lib/virtual-select/virtual-select.min.css" asp-append-version="true" />
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 
@@ -59,15 +60,14 @@
 
                         <div class="input-field">
                             <label>Departamentos</label>
-                            <select required>
-                                <option disabled selected>Seleccionar Áreas</option>
-                                <option>Infantil (INF)</option>
-                                <option>Secundaria (SEC)</option>
-                                <option>Bachillerato (BACH)</option>
-                                <option>Formación Profesional (FP)</option>
-                                <option>Dirección (DIR)</option>
-                                <option>Servicios Generales (SG)</option>
-                                <option>Secretaría (SECR)</option>
+                            <select id="multipleSelect" multiple name="native-select" placeholder="Native Select" data-search="false" data-silent-initial-value-set="true">
+                                <option value="1">Infantil (INF)</option>
+                                <option value="2">Secundaria (SEC)</option>
+                                <option value="3">Bachillerato (BACH)</option>
+                                <option value="4">Formación Profesional (FP)</option>
+                                <option value="5">Dirección (DIR)</option>
+                                <option value="6">Servicios Generales (SG)</option>
+                                <option value="7">Secretaría (SECR)</option>
                             </select>
                         </div>
                     </div>
@@ -94,3 +94,9 @@
 </div>
 
 <script src="~/js/form.js" asp-append-version="true"></script>
+<script src="~/lib/virtual-select/virtual-select.min.js" asp-append-version="true"></script>
+<script>
+    VirtualSelect.init({
+        ele: '#multipleSelect'
+    });
+</script>
